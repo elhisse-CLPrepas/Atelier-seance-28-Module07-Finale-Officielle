@@ -38,7 +38,7 @@ Vite 8.0.13 est fixé dans le lockfile. Le projet ne demande aucune clé API. Le
 | `src/data/grille.json` | Référentiel commun, poids inchangés |
 | `src/data/resultats.json` | Décision Grand Prix après validation |
 | `public/assets/dossiers/` | Captures réelles des projets, créées lors de leur intégration |
-| `public/rapports/` | Synthèses publiques autorisées, créées après évaluation |
+| `public/rapports/` | Rapport qualitatif des participants et futures synthèses autorisées |
 | `docs/GUIDE-AJOUT-DOSSIER.md` | Procédure de mise à jour |
 | `docs/GUIDE-PUBLICATION-GITHUB.md` | Préparation du dépôt et publication |
 

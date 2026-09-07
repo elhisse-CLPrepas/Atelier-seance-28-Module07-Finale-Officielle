@@ -1,0 +1,48 @@
+{
+  "version": "LN-IA-S28-V1",
+  "source": "Dossier jury S28 V2 — section 3",
+  "criteria": [
+    {
+      "id": "C1",
+      "label": "Pertinence du sujet professionnel",
+      "max": 15,
+      "indicator": "Besoin, destinataire et utilité explicités."
+    },
+    {
+      "id": "C2",
+      "label": "Sélection et qualité des preuves",
+      "max": 20,
+      "indicator": "Preuves accessibles, choisies et expliquées."
+    },
+    {
+      "id": "C3",
+      "label": "Progression avant/après",
+      "max": 20,
+      "indicator": "État initial, correction et résultat observé."
+    },
+    {
+      "id": "C4",
+      "label": "Cohérence et lisibilité du portfolio",
+      "max": 15,
+      "indicator": "Structure claire, synthèse et index utilisable."
+    },
+    {
+      "id": "C5",
+      "label": "Clarté du pitch et de la démonstration",
+      "max": 15,
+      "indicator": "Présentation compréhensible, parcours maîtrisé, durées respectées."
+    },
+    {
+      "id": "C6",
+      "label": "Compréhension de la méthode et rôle de l’IA",
+      "max": 10,
+      "indicator": "Contribution personnelle et assistance distinguées."
+    },
+    {
+      "id": "C7",
+      "label": "Sécurité et contrôle humain",
+      "max": 5,
+      "indicator": "Données protégées, contrôles et autorisations expliqués."
+    }
+  ]
+}

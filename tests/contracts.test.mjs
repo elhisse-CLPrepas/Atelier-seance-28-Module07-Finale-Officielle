@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { validateData,checkLocal,checkUrl } from '../scripts/data-contract.mjs';
+import { totalScore,renderProjects,renderEvaluations,renderAward,escapeHtml } from '../src/render.js';
+const read=f=>JSON.parse(readFileSync(new URL(`../src/data/${f}.json`,import.meta.url)));
+const base=()=>[read('finalistes'),read('grille'),read('resultats')];
+test('Les données livrées respectent la grille et ne présument aucun résultat',()=>{const [p,g,r]=base();assert.equal(validateData(p,g,r),true);assert.equal(g.criteria.reduce((s,c)=>s+c.max,0),100);assert.ok(p.every(v=>v.evaluation===null));assert.equal(r.winnerId,null)});
+test('Les dossiers absents ne produisent aucun lien fictif',()=>{const [p]=base();const html=renderProjects(p);assert.equal((html.match(/<article/g)||[]).length,4);assert.ok(!html.includes('href="null"'));assert.ok(!html.includes('href="#"'));assert.ok(!html.includes('href="https://github.com/'))});
+
+test('Un aperçu ouvre sa page source et conserve sa capture locale',()=>{const [p]=base();p[0].preview={src:'assets/dossiers/test.png',alt:'Capture de test',capturedAt:'2026-09-07',sourceUrl:'https://example.github.io/projet/'};const html=renderProjects(p);assert.ok(html.includes('class="project-preview" href="https://example.github.io/projet/"'));assert.ok(html.includes('src="assets/dossiers/test.png"'));assert.ok(!html.includes('href="assets/dossiers/test.png"'))});
+test('Un lien de dossier exige une trace de publication',()=>{const [p,g,r]=base();p[0].pagesUrl='https://example.github.io/projet/';assert.throws(()=>validateData(p,g,r),/autorisation/)});
+test('URLs de scripts, données et accès signés refusés',()=>{for(const u of ['javascript:alert(1)','data:text/html,x','http://example.com','https://example.com/?token=secret','https://user:pass@example.com'])assert.throws(()=>checkUrl(u))});
+test('Chemins traversants et images non locales refusés',()=>{for(const p of ['../prive/note.md','rapports/../../secret.md','https://example.com/image.png','assets/dossiers/a.svg'])assert.throws(()=>checkLocal(p,'preview'))});
+test('Aucune normalisation sur 100 si une note manque',()=>{const c=Array.from({length:7},()=>({score:1}));assert.equal(totalScore(c),7);c[4].score=null;assert.equal(totalScore(c),null)});
+test('Aucun calcul du lauréat à partir des notes',()=>{const [p,g,r]=base();assert.match(renderAward(r,p),/Une décision à documenter/);r.winnerId='F01';assert.throws(()=>validateData(p,g,r),/anticipée/)});
+test('Les textes des données sont échappés',()=>{assert.equal(escapeHtml('<script>"&'), '&lt;script&gt;&quot;&amp;');const [p]=base();p[0].name='<img src=x onerror=alert(1)>';assert.ok(!renderProjects(p).includes('<img src=x'))});
+test('Une synthèse publique partielle reste partielle et exige des preuves pour chaque note',()=>{const [p,g,r]=base();p[0].publication={validatedBy:'Test',validatedAt:'2026-09-07',decisionRef:'TEST'};p[0].evaluation={status:'validee',gridVersion:g.version,publishedAt:'2026-09-07',validatedBy:'Test',decisionRef:'TEST',reportPath:'rapports/f01.md',criteria:g.criteria.map(c=>({id:c.id,score:null,observation:'Non observé dans ce test',evidenceUrls:[]})),strength:'Texte de test',nextAction:'Compléter les pièces'};assert.equal(validateData(p,g,r),true);assert.match(renderEvaluations(p,g),/Évaluation partielle/);p[0].evaluation.criteria[0].score=12;assert.throws(()=>validateData(p,g,r),/preuve/);p[0].evaluation.criteria[0].evidenceUrls=['https://example.github.io/preuve/'];assert.equal(validateData(p,g,r),true);p[0].evaluation.criteria[0].score=16;assert.throws(()=>validateData(p,g,r),/bornes/)});
+test('La grille commune ne peut pas changer ses pondérations silencieusement',()=>{const [p,g,r]=base();g.criteria[0].max=20;assert.throws(()=>validateData(p,g,r),/maxima/)});
+test('La grille commune conserve le sens exact de ses critères',()=>{const [p,g,r]=base();g.criteria[0].label='Sophistication technique';assert.throws(()=>validateData(p,g,r),/canonique/)});

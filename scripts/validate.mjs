@@ -7,7 +7,7 @@ const read=(path)=>JSON.parse(readFileSync(resolve(root,path),'utf8'));
 const finalistes=read('src/data/finalistes.json'),grille=read('src/data/grille.json'),resultats=read('src/data/resultats.json');
 try {
   validateData(finalistes,grille,resultats);
-  const expected=new Set(['assets/logo-ln-ia.png',...[25,26,27,28].map(n=>`assets/seance-${n}.png`)]);
+  const expected=new Set(['assets/logo-ln-ia.png',...[25,26,27,28].map(n=>`assets/seance-${n}.png`),'rapports/retour-qualitatif-participants.html','rapports/retour-qualitatif-participants.md']);
   finalistes.forEach(p=>{
     if(p.preview)expected.add(p.preview.src);
     if(p.evaluation){expected.add(p.evaluation.reportPath);const report=readFileSync(resolve(root,'public',p.evaluation.reportPath),'utf8');if(!report.includes('Statut : SYNTHÈSE PUBLIQUE VALIDÉE')||!report.includes(`Candidat : ${p.id}`))throw new Error(`En-tête de synthèse publique manquant : ${p.id}`);}

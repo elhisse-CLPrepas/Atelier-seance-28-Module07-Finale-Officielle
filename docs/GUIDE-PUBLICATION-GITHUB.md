@@ -2,6 +2,8 @@
 
 Le ZIP est un atelier de travail. Seul le contenu de `site/` doit devenir le dépôt public. Les dossiers `ressources-privees/` et `prompts/` restent dans le pack local.
 
+**Le dépôt et le site sont désormais publiés.** Pour les prochaines modifications, utiliser la section « Reprise d’un dépôt déjà créé » et le guide d’ajout de dossier. Les étapes de création ci-dessous sont conservées pour documenter la préparation initiale ; ne pas les relancer sur ce dépôt.
+
 ## Préparation assistée
 
 Prérequis : Node.js 24, Git, GitHub CLI (`gh`) connecté au compte `elhisse-CLPrepas`, et identité Git configurée. Ne collez jamais de jeton dans un fichier du projet.
@@ -28,7 +30,7 @@ Il ne modifie aucun dépôt existant. Si une étape distante échoue, le dépôt
 5. Ouvrir Actions → Publier GitHub Pages → Run workflow, branche `main`.
 6. Attendre le résultat du workflow. Ouvrir l’URL retournée par le job de déploiement et contrôler le site ainsi que les affiches.
 
-URL attendue, non certifiée tant que le déploiement n’a pas réussi :
+URL publique vérifiée après le déploiement réussi du 7 septembre 2026 :
 
 `https://elhisse-clprepas.github.io/Atelier-seance-28-Module07-Finale-Officielle/`
 
@@ -50,10 +52,14 @@ Suivre `GUIDE-AJOUT-DOSSIER.md`, préparer une PR, vérifier les contrôles et l
 - [Workflows personnalisés GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 - [Création de dépôt avec GitHub CLI](https://cli.github.com/manual/gh_repo_create).
 
-## État de la reprise — 7 septembre 2026
+## Publication vérifiée — 7 septembre 2026
 
-Le dépôt public demandé et l’[Issue #1](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/issues/1) sont créés. La branche `feat/presentation-seance-28` porte le site. Ne pas relancer le script de création : suivre la procédure de reprise d’un dépôt existant.
+Le pilote a validé le résultat et confirmé la fusion de la [PR #2](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/pull/2). L’[Issue #1](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/issues/1) est fermée. Le commit publié est `1248c25134ecb5d3e8ae895b8132d2d0cb646594`.
 
-Les contrôles locaux ont réussi sous Node 24.12.0 : installation `npm ci`, 12 tests et build. Chrome local a contrôlé les largeurs 1440, 390 et 320 pixels, le clavier, les images, les ancres et le rafraîchissement sous le préfixe du dépôt. La revue indépendante d’agent est favorable à la présentation de la PR. Les détails sont dans `CONTROLES-PREPUBLICATION.md`.
+La [CI de main](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/actions/runs/34145881625) et le [workflow Pages](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/actions/runs/34145998799) ont réussi. Le job de déploiement s’est terminé à 17 h 04 min 07 s UTC, soit 18 h 04 min 07 s GMT+1. L’installation, les 12 tests et le build ont réussi dans ce workflow.
 
-La revue humaine du résultat concret reste à consigner avant fusion. L’autorisation de première publication a déjà été donnée ; elle ne valide aucune future note ou décision de candidat. GitHub Pages ne sera déclaré publié qu’après réussite du workflow et vérification de l’URL effective.
+Le site public a été ouvert et contrôlé avec Chrome local aux largeurs 1440, 390 et 320 pixels : quatre fiches, sept critères, clavier, images, ancres et rafraîchissement vérifiés ; aucun débordement ni erreur JavaScript/HTTP observée. La page, le JavaScript, le CSS et les cinq images répondent HTTP 200. Les empreintes des cinq images publiées correspondent aux originaux. Le pilote a également confirmé avoir consulté le site et constaté son fonctionnement.
+
+Les [contrôles de prépublication](CONTROLES-PREPUBLICATION.md) restent disponibles comme historique. Les contrôles mobiles portent sur des dimensions de fenêtre Chrome, pas sur tous les appareils physiques.
+
+La validation de la présentation ne vaut pas validation d’une future note, synthèse ou décision de candidat. Les dossiers et résultats restent en attente de sources vérifiées et de leurs autorisations propres.

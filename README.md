@@ -2,6 +2,8 @@
 
 Mini-site Vite du Grand Prix LN-IA des projets professionnels. Lundi 7 septembre 2026, 19 h GMT+1. Quatre finalistes confirmés. Les dossiers, évaluations et décisions restent à intégrer après vérification.
 
+**[Ouvrir le site publié](https://elhisse-clprepas.github.io/Atelier-seance-28-Module07-Finale-Officielle/)** — Première publication du 7 septembre 2026, après validation du pilote et fusion de la [PR #2](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/pull/2). [Déploiement réussi](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/actions/runs/34145998799).
+
 ## Démarrer
 
 Installer Node.js 24 LTS. Dans ce dossier :
@@ -44,15 +46,11 @@ Le validateur refuse les notes hors bornes, les liens factices, les champs de pu
 
 ## Publication
 
-Nom technique demandé : `Atelier-seance-28-Module07-Finale-Officielle`. Le contenu de ce dossier forme la racine du dépôt public. Ne pas envoyer le ZIP complet.
+Le dépôt `Atelier-seance-28-Module07-Finale-Officielle` et son site GitHub Pages existent. Ne relancez pas le script de création `github:prepare -- --execute` pour une mise à jour. Le contenu de ce dossier forme la racine du dépôt public ; le pack complet reste privé.
 
-```bash
-npm run github:prepare
-```
+Pour intégrer un dossier reçu, suivre [le guide d’ajout](docs/GUIDE-AJOUT-DOSSIER.md) : vérifier ses sources, préparer le contenu autorisé, travailler dans une branche dédiée, exécuter les contrôles et présenter la PR pour revue humaine. La publication d’une fiche, d’une évaluation et d’une décision de prix exige leurs validations respectives.
 
-Cette commande affiche le mode d’emploi. Ajouter `-- --execute` pour préparer un nouveau dépôt public et une PR avec GitHub CLI connecté. Le script ne fusionne pas et ne déclenche pas Pages. La procédure de suite est dans le guide.
-
-Le workflow Pages se lance manuellement depuis Actions après fusion autorisée et activation de Settings → Pages → GitHub Actions. Le workflow de contrôle s’exécute sur les PR et sur main.
+Le workflow Pages est configuré avec GitHub Actions et se lance manuellement après fusion autorisée. Le workflow de contrôle s’exécute sur les PR et sur `main`. [Procédure de publication et état vérifié](docs/GUIDE-PUBLICATION-GITHUB.md).
 
 ## Cadre
 

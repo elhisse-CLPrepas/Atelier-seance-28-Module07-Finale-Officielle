@@ -1,5 +1,7 @@
 # Contrôles de prépublication — 7 septembre 2026
 
+Ce document conserve les contrôles effectués avant publication. La PR #2 a depuis été validée et fusionnée, puis le site publié et contrôlé. Voir [le bilan de publication](GUIDE-PUBLICATION-GITHUB.md#publication-vérifiée--7-septembre-2026).
+
 Cette première présentation réunit les quatre finalistes confirmés, les affiches du Module 07, le programme proposé et les sept critères communs. Aucun dossier, score, rapport nominatif ou lauréat n’est prérempli.
 
 ## Résultats locaux
@@ -24,4 +26,4 @@ Le site ne contient que les données publiques et les guides vierges. Les docume
 
 Les captures et les résultats détaillés des contrôles locaux sont conservés par le pilote. Le contrôle en Chrome local ne remplace pas un essai sur chaque appareil de projection ou navigateur mobile réel. Les validations de contenu, l’identité des futurs liens et l’authenticité des décisions restent humaines.
 
-La revue d’agent n’est pas une revue humaine. Consigner la revue du résultat concret, attendre la CI du dernier commit, fusionner selon les règles du dépôt puis lancer le workflow Pages déjà prévu. Une URL prévue ne constitue pas la preuve d’un déploiement réussi.
+Lors de cette prépublication, la revue humaine, la fusion et le déploiement restaient à effectuer. Ces étapes sont désormais réalisées pour la PR #2 et documentées dans le bilan lié ci-dessus. Pour toute nouvelle modification, conserver le même parcours : contrôles, PR, revue humaine, décision puis publication. La revue d’agent ne remplace pas la revue humaine.

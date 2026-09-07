@@ -63,3 +63,18 @@ Le site public a été ouvert et contrôlé avec Chrome local aux largeurs 1440,
 Les [contrôles de prépublication](CONTROLES-PREPUBLICATION.md) restent disponibles comme historique. Les contrôles mobiles portent sur des dimensions de fenêtre Chrome, pas sur tous les appareils physiques.
 
 La validation de la présentation ne vaut pas validation d’une future note, synthèse ou décision de candidat. Les dossiers et résultats restent en attente de sources vérifiées et de leurs autorisations propres.
+
+## Publication du rapport Tous gagnants — 8 septembre 2026
+
+Le pilote a demandé la publication d’un retour qualitatif aux participants, puis confirmé la fusion de la [PR #6](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/pull/6). Fusion vérifiée le 7 septembre à 22:53:16 UTC, soit 23:53:16 GMT+1. Le commit publié est `0d723f61305a557dbcf7f3e0577515b069745b06`, dont le contenu est identique à la version relue de la PR.
+
+Le rapport **« Tous gagnants : regards sur les projets »** présente les réalisations, forces et perspectives des quatre participants sans notation ni classement. « Tous gagnants » exprime la reconnaissance collective de leur engagement et de leurs progrès. Le contenu est accessible depuis la rubrique « Bravo à tous » du site :
+
+- [Lire le rapport](https://elhisse-clprepas.github.io/Atelier-seance-28-Module07-Finale-Officielle/rapports/retour-qualitatif-participants.html).
+- [Ouvrir le texte Markdown](https://elhisse-clprepas.github.io/Atelier-seance-28-Module07-Finale-Officielle/rapports/retour-qualitatif-participants.md).
+
+La [CI de main](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/actions/runs/34168182191) et le [déploiement Pages](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/actions/runs/34168583590) ont réussi. Le job de déploiement s’est terminé le 7 septembre à 23:01:05 UTC, soit le **8 septembre à 00:01:05 GMT+1**. Installation, 13 tests, validation et compilation réussies ; seul `dist/` est publié.
+
+Contrôles réalisés sur les adresses publiques avec Chrome aux largeurs 1440, 390 et 320 pixels : accès depuis l’accueil, quatre portraits, logo chargé, navigation au clavier, rafraîchissement, lien de retour et absence de débordement horizontal. Aucune erreur JavaScript ou HTTP observée. Le téléchargement Markdown fonctionne. Les deux fichiers du rapport répondent HTTP 200 et sont identiques octet pour octet à ceux du commit déployé ; les quatre liens de projets répondent également HTTP 200. Les captures bureau et mobile ont été inspectées. Ces contrôles portent sur des dimensions de fenêtre Chrome, pas sur tous les appareils physiques.
+
+La revue indépendante du périmètre fusionné est favorable. Les champs d’évaluation et de décision du Grand Prix restent inchangés. Le présent ajout documentaire conserve la trace de cette publication et ne nécessite pas de nouveau déploiement du site.

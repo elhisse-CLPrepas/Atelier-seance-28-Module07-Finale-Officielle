@@ -1,9 +1,10 @@
 import './style.css';
 import finalistes from './data/finalistes.json';
+import affiches from './data/affiches.json';
 import grille from './data/grille.json';
 import resultats from './data/resultats.json';
 import { renderProjects, renderCriteria, renderEvaluations, renderAward } from './render.js';
-document.querySelector('#finalistes').innerHTML = renderProjects(finalistes);
+document.querySelector('#finalistes').innerHTML = renderProjects(finalistes,affiches);
 document.querySelector('#criteria').innerHTML = renderCriteria(grille);
 document.querySelector('#evaluations').innerHTML = renderEvaluations(finalistes,grille);
 document.querySelector('#grand-prix').innerHTML = renderAward(resultats,finalistes);

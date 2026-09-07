@@ -37,14 +37,18 @@ Vite 8.0.13 est fixé dans le lockfile. Le projet ne demande aucune clé API. Le
 | Fichier | Usage |
 |---|---|
 | `src/data/finalistes.json` | Dossiers, captures, preuves et évaluations publiques |
+| `src/data/affiches.json` | Correspondance F01–F04, chemins et textes alternatifs des affiches |
 | `src/data/grille.json` | Référentiel commun, poids inchangés |
 | `src/data/resultats.json` | Décision Grand Prix après validation |
 | `public/assets/dossiers/` | Captures réelles des projets, créées lors de leur intégration |
+| `public/assets/affiches/` | Quatre affiches originales fournies par le pilote, affichées intégralement et agrandissables |
 | `public/rapports/` | Rapport qualitatif des participants et futures synthèses autorisées |
 | `docs/GUIDE-AJOUT-DOSSIER.md` | Procédure de mise à jour |
 | `docs/GUIDE-PUBLICATION-GITHUB.md` | Préparation du dépôt et publication |
 
 Le validateur refuse les notes hors bornes, les liens factices, les champs de publication absents et les actifs publics non référencés. Il contrôle la structure des traces de validation, pas leur authenticité : la relecture du pilote reste nécessaire.
+
+Les affiches de présentation sont intégrées à la demande du pilote du 8 septembre 2026, dans les cartes F01–F04 et les portraits du rapport « Tous gagnants ». Elles sont distinctes des captures de preuves et n’activent aucun statut d’évaluation. Leurs proportions sont conservées ; un lien permet de les ouvrir en taille originale. Le rapport Markdown reste la version textuelle. Pour remplacer une affiche, mettre à jour les deux emplacements de présentation et vérifier leur concordance avant la PR.
 
 ## Publication
 

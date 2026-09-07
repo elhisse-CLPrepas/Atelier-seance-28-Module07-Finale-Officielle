@@ -1,0 +1,18 @@
+{
+  "F01": {
+    "src": "assets/affiches/Affiche-F01-Abdelmjid-ANAGRI.png",
+    "alt": "Affiche F01 — Abdelmjid Anagri, LAB-SVT-IA : méthode pour les enseignants de SVT, contrôle humain et félicitations."
+  },
+  "F02": {
+    "src": "assets/affiches/Affiche-F02-Karim-EL-MECHTI.png",
+    "alt": "Affiche F02 — Karim El Mechti, INGÉNIA PILOT : suivi des projets d’ingénierie, recherche, filtres, alertes et félicitations."
+  },
+  "F03": {
+    "src": "assets/affiches/Affiche-F03-Abdelmoula-LYAZRHI.png",
+    "alt": "Affiche F03 — Abdelmoula Lyazrhi, IA appliquée aux métiers : formation professionnelle, guide pratique, vérification humaine et félicitations."
+  },
+  "F04": {
+    "src": "assets/affiches/Affiche-F04-Mohamed-BOUMRAH.png",
+    "alt": "Affiche F04 — Mohamed Boumrah, REWIRE YOUR MIND 90 : portfolio de productions et de preuves, contrôles et félicitations."
+  }
+}

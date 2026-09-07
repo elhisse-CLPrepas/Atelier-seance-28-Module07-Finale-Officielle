@@ -4,6 +4,8 @@ Mini-site Vite du Grand Prix LN-IA des projets professionnels. Lundi 7 septembre
 
 **[Ouvrir le site publié](https://elhisse-clprepas.github.io/Atelier-seance-28-Module07-Finale-Officielle/)** — Première publication du 7 septembre 2026, après validation du pilote et fusion de la [PR #2](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/pull/2). [Déploiement réussi](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/actions/runs/34145998799).
 
+**[Tous gagnants : regards sur les projets](https://elhisse-clprepas.github.io/Atelier-seance-28-Module07-Finale-Officielle/rapports/retour-qualitatif-participants.html)** — Rapport qualitatif publié le 8 septembre 2026 (GMT+1), après fusion de la [PR #6](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/pull/6). Quatre portraits, leurs forces et une perspective pour poursuivre l’apprentissage, sans notation ni classement. Accessible depuis « Bravo à tous », imprimable et téléchargeable en texte. [Contrôles de publication](docs/GUIDE-PUBLICATION-GITHUB.md#publication-du-rapport-tous-gagnants--8-septembre-2026).
+
 ## Démarrer
 
 Installer Node.js 24 LTS. Dans ce dossier :

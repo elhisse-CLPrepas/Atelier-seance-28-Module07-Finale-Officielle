@@ -1,0 +1,58 @@
+[
+  {
+    "id": "F01",
+    "name": "Abdelmjid Anagri",
+    "profile": "Inspecteur pédagogique — SVT",
+    "axis": "Ressource scientifique et pédagogique — SVT",
+    "title": null,
+    "summary": null,
+    "repositoryUrl": null,
+    "pagesUrl": null,
+    "preview": null,
+    "evidence": [],
+    "publication": null,
+    "evaluation": null
+  },
+  {
+    "id": "F02",
+    "name": "Karim El Mechti",
+    "profile": "Ingénieur BTP — Conception",
+    "axis": "Maquette numérique — BIM",
+    "title": null,
+    "summary": null,
+    "repositoryUrl": null,
+    "pagesUrl": null,
+    "preview": null,
+    "evidence": [],
+    "publication": null,
+    "evaluation": null
+  },
+  {
+    "id": "F03",
+    "name": "Abdelmoula Lyazrhi",
+    "profile": "Autoentrepreneur — Coach — Formateur",
+    "axis": "Parcours de formation",
+    "title": null,
+    "summary": null,
+    "repositoryUrl": null,
+    "pagesUrl": null,
+    "preview": null,
+    "evidence": [],
+    "publication": null,
+    "evaluation": null
+  },
+  {
+    "id": "F04",
+    "name": "Mohamed Boumrah",
+    "profile": "Ingénieur retraité — Master Coach Augmenté-IA",
+    "axis": "Master Coach Augmenté-IA",
+    "title": null,
+    "summary": null,
+    "repositoryUrl": null,
+    "pagesUrl": null,
+    "preview": null,
+    "evidence": [],
+    "publication": null,
+    "evaluation": null
+  }
+]

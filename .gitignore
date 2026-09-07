@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.*
+*.local
+prive/
+ressources-privees/
+.DS_Store
+*.log

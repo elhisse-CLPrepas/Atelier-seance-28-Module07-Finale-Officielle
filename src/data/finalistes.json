@@ -4,13 +4,17 @@
     "name": "Abdelmjid Anagri",
     "profile": "Inspecteur pédagogique — SVT",
     "axis": "Ressource scientifique et pédagogique — SVT",
-    "title": null,
-    "summary": null,
+    "title": "LAB-SVT-IA",
+    "summary": "Méthode destinée aux enseignants de SVT pour préparer leurs supports avec l’aide de l’IA, en gardant le cadrage, le contrôle et la validation humaine.",
     "repositoryUrl": null,
-    "pagesUrl": null,
+    "pagesUrl": "https://aanagri2-eng.github.io/lab-svt-ia/",
     "preview": null,
     "evidence": [],
-    "publication": null,
+    "publication": {
+      "validatedBy": "Prof. Abderrahman El Hisse",
+      "validatedAt": "2026-09-08",
+      "decisionRef": "LIENS-PUBLICS-FINALISTES-2026-09-08"
+    },
     "evaluation": null
   },
   {
@@ -18,13 +22,17 @@
     "name": "Karim El Mechti",
     "profile": "Ingénieur BTP — Conception",
     "axis": "Maquette numérique — BIM",
-    "title": null,
-    "summary": null,
+    "title": "INGÉNIA PILOT — Pilotage des projets d’ingénierie",
+    "summary": "Démonstration de suivi des missions d’un bureau d’études : recherche, filtres, alertes, priorités et checklist, à partir de données de démonstration sous alias.",
     "repositoryUrl": null,
-    "pagesUrl": null,
+    "pagesUrl": "https://elmechtiai-crypto.github.io/suivi-projets-ingenierie/",
     "preview": null,
     "evidence": [],
-    "publication": null,
+    "publication": {
+      "validatedBy": "Prof. Abderrahman El Hisse",
+      "validatedAt": "2026-09-08",
+      "decisionRef": "LIENS-PUBLICS-FINALISTES-2026-09-08"
+    },
     "evaluation": null
   },
   {
@@ -32,13 +40,17 @@
     "name": "Abdelmoula Lyazrhi",
     "profile": "Autoentrepreneur — Coach — Formateur",
     "axis": "Parcours de formation",
-    "title": null,
-    "summary": null,
+    "title": "IA appliquée aux métiers",
+    "summary": "Projet de formation professionnelle accompagné d’un guide pratique, du cadrage aux corrections et à la vérification humaine.",
     "repositoryUrl": null,
-    "pagesUrl": null,
+    "pagesUrl": "https://abdo1966lyazrhi.github.io/mon-premier-site/",
     "preview": null,
     "evidence": [],
-    "publication": null,
+    "publication": {
+      "validatedBy": "Prof. Abderrahman El Hisse",
+      "validatedAt": "2026-09-08",
+      "decisionRef": "LIENS-PUBLICS-FINALISTES-2026-09-08"
+    },
     "evaluation": null
   },
   {
@@ -46,13 +58,17 @@
     "name": "Mohamed Boumrah",
     "profile": "Ingénieur retraité — Master Coach Augmenté-IA",
     "axis": "Master Coach Augmenté-IA",
-    "title": null,
-    "summary": null,
+    "title": "REWIRE YOUR MIND 90",
+    "summary": "Portfolio de productions et de preuves qui retrace le développement du projet et relie la synthèse aux documents de cadrage, aux prompts et aux corrections.",
     "repositoryUrl": null,
-    "pagesUrl": null,
+    "pagesUrl": "https://luxurytops.github.io/rewire-90-jours/portfolio/",
     "preview": null,
     "evidence": [],
-    "publication": null,
+    "publication": {
+      "validatedBy": "Prof. Abderrahman El Hisse",
+      "validatedAt": "2026-09-08",
+      "decisionRef": "LIENS-PUBLICS-FINALISTES-2026-09-08"
+    },
     "evaluation": null
   }
 ]

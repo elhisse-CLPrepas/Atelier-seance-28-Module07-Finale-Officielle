@@ -1,6 +1,6 @@
 # Atelier — Séance 28 — Module 07 — Finale officielle
 
-Mini-site Vite du Grand Prix LN-IA des projets professionnels. Lundi 7 septembre 2026, 19 h GMT+1. Quatre finalistes confirmés. Les dossiers, évaluations et décisions restent à intégrer après vérification.
+Mini-site Vite de clôture du Challenge 100 Jours / Relance d’été LN-IA. Quatre projets à découvrir sur GitHub Pages, leurs affiches et un retour qualitatif destiné aux participants. Le programme préparé pour la finale du 7 septembre 2026 et la grille du Module 07 restent consultables comme références.
 
 **[Ouvrir le site publié](https://elhisse-clprepas.github.io/Atelier-seance-28-Module07-Finale-Officielle/)** — Première publication du 7 septembre 2026, après validation du pilote et fusion de la [PR #2](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/pull/2). [Déploiement réussi](https://github.com/elhisse-CLPrepas/Atelier-seance-28-Module07-Finale-Officielle/actions/runs/34145998799).
 
@@ -27,10 +27,10 @@ Vite 8.0.13 est fixé dans le lockfile. Le projet ne demande aucune clé API. Le
 ## Contenu
 
 - Présentation de la finale et affiche S28.
-- Quatre fiches extensibles, liens GitHub, aperçus et preuves.
-- Conducteur proposé et continuité des séances 25 à 28.
-- Sept critères sur 100 et synthèses publiques validées.
-- Décision Grand Prix distincte des scores pédagogiques.
+- Quatre cartes avec titre, présentation, affiche, lien GitHub Pages et accès au retour qualitatif correspondant.
+- Félicitations collectives et message de clôture du Challenge Relance d’été.
+- Conducteur proposé et sept critères conservés dans des sections repliables ; affiches des séances 25 à 28.
+- Évaluations ou décision Grand Prix affichées uniquement si leur publication est validée dans les données.
 
 ## Mettre à jour
 
@@ -47,6 +47,8 @@ Vite 8.0.13 est fixé dans le lockfile. Le projet ne demande aucune clé API. Le
 | `docs/GUIDE-PUBLICATION-GITHUB.md` | Préparation du dépôt et publication |
 
 Le validateur refuse les notes hors bornes, les liens factices, les champs de publication absents et les actifs publics non référencés. Il contrôle la structure des traces de validation, pas leur authenticité : la relecture du pilote reste nécessaire.
+
+La demande du pilote du 8 septembre 2026 autorise les quatre liens GitHub Pages et la clôture collective. Le repère `LIENS-PUBLICS-FINALISTES-2026-09-08` trace ce périmètre dans les fiches ; les titres et présentations reprennent les projets déjà décrits dans le rapport public. Cette trace autorise leur diffusion et ne constitue pas une validation pédagogique. Les liens vérifiés correspondent exactement aux quatre pages fournies, dont le portfolio de Mohamed Boumrah sous `/rewire-90-jours/portfolio/`.
 
 Les affiches de présentation sont intégrées à la demande du pilote du 8 septembre 2026, dans les cartes F01–F04 et les portraits du rapport « Tous gagnants ». Elles sont distinctes des captures de preuves et n’activent aucun statut d’évaluation. Leurs proportions sont conservées ; un lien permet de les ouvrir en taille originale. Le rapport Markdown reste la version textuelle. Pour remplacer une affiche, mettre à jour les deux emplacements de présentation et vérifier leur concordance avant la PR.
 
